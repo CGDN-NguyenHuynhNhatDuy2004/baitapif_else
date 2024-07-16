@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="cannang" placeholder="Nhap can nang cua ban">
+<input type="number" id="chieucao" placeholder="Nhap chieu cao cua ban">
+<button onclick="kiemTraCanNang()">KIEMTRA</button>
+    <p id="result"></p>
+<script>
+    function kiemTraCanNang(){
+        let weight = +document.getElementById("cannang").value
+        let height = +document.getElementById("chieucao").value
+        let BMI = weight/(height^2);
+        if(BMI>= 30){
+            document.getElementById("result").innerHTML = "Obese"
+        }
+        else if(BMI>=25){
+            document.getElementById("result").innerHTML = "Overweight"
+        }
+        else if(BMI>=18.5){
+            document.getElementById("result").innerHTML = "Normal"
+        }
+        else {
+            document.getElementById("result").innerHTML = "Underweight"
+        }
+
+    }
+</script>
+</body>
+</html>
