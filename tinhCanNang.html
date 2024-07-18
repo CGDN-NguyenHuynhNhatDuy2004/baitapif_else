@@ -13,7 +13,7 @@
     function kiemTraCanNang(){
         let weight = +document.getElementById("cannang").value
         let height = +document.getElementById("chieucao").value
-        let BMI = weight/(height^2);
+        let BMI = weight/(height*height);
         if(BMI>= 30){
             document.getElementById("result").innerHTML = "Obese"
         }

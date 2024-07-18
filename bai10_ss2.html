@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x= parseFloat(prompt("nhap so kWH"))
+    if(x>0 && x<=50){
+        x = x*1806;
+        alert(x)
+    }else if( x<=100){
+        x = x*1866;
+        alert(x)
+    }else if( x<=200){
+        x= x*2.167;
+        alert(x)
+    }else if(x<=300){
+        x=x*2729;
+        alert(x)
+    } else{
+        alert("k tinh duoc")
+    }
+</script>
+</body>
+</html>
